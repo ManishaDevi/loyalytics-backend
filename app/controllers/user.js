@@ -15,5 +15,8 @@ module.exports = {
                 response.error(res)
             }
         });
+    },
+    googleAuth: (req, res, next) => {
+        return res.json(req.body)
     }
 }

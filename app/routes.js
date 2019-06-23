@@ -4,4 +4,5 @@ const response = require('./responses')
 
 router.get('/', (req, res, next) => response.ok(res))
 router.post('/login', userController.login)
+router.post('/storeauthcode', userController.googleAuth)
 module.exports = router 
